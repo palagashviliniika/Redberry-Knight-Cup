@@ -3,14 +3,17 @@ import ReactDOM from 'react-dom/client';
 import reportWebVitals from './reportWebVitals';
 import Home from "./Pages/Home";
 import {BrowserRouter, Route, Routes} from "react-router-dom";
+import Landing from "./Pages/Landing";
+import "./index.css";
 
-const variable = 23;
+// const variable = 23;
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
       <BrowserRouter>
           <Routes>
-              <Route path="/" element={<Home variable={variable}/>} />
+              {/*<Route path="/" element={<Home variable={variable}/>} />*/}
+              <Route path="/" element={<Landing />} />
           </Routes>
       </BrowserRouter>
   </React.StrictMode>
