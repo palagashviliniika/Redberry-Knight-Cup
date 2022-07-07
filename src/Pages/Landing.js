@@ -1,7 +1,7 @@
 import React from 'react';
-import {Article, Container, Main, Span} from "../Components/LandingElements";
+import {Article, Container, Flex, Main, Span} from "../Components/LandingElements";
 import Navigation from "../Components/Navigation";
-import Button from "../Components/Button";
+import ButtonNext from "../Components/ButtonNext";
 
 const Landing = () => {
     return (
@@ -11,7 +11,9 @@ const Landing = () => {
                 <Article>
                     CHESS SAYS <Span>A LOT ABOUT</Span> <br/> WHO WE ARE
                 </Article>
-                <Button>Get Started</Button>
+                    <Flex>
+                        <ButtonNext arrowExist = {true} href = {"/info"}>Get Started</ButtonNext>
+                    </Flex>
             </Main>
         </Container>
     );

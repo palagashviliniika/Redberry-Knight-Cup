@@ -1,5 +1,6 @@
 import React from 'react';
 import styled from "styled-components";
+import {Link} from "react-router-dom";
 
 export const Logo = styled.div`
   font-family: 'Nunito', sans-serif;
@@ -39,6 +40,7 @@ export const Article = styled.h3`
   font-weight: 800;
   color: white;
   padding: 265px 0 0 85px;
+  margin-bottom: 102px;
 `
 
 export const Span = styled.span`
@@ -48,14 +50,30 @@ export const Span = styled.span`
   vertical-align: 20px;
 `
 
-export const Btn = styled.button`
+export const BtnNext = styled(Link)`
   font-family: 'Open Sans', sans-serif;
   font-size: 20px;
   font-weight: 400;
-  margin: 102px 0 0 85px;
   padding: 13px 24px;
+  border-radius: 8px;
+  border: 5px solid #212529;
+  margin-left:85px;
   background-color: #212529;
   color: white;
-  border-radius: 8px;
-  border: 1px solid #212529;
+  cursor: pointer;
+  transition: 0.2s all linear;
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  &:hover{
+    border: 5px solid rgb(194, 165, 249, .8);
+  }
+`
+
+export const BtnText = styled.div`
+    padding-right: ${(props) => props.arrowExist ? "12px" : "0px"};
+`
+
+export const Flex = styled.div`
+  display: flex;
 `

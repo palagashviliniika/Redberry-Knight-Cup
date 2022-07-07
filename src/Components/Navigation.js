@@ -12,7 +12,6 @@ const Navigation = ({url}) => {
                 </Logo>
             </Nav>
         </Image>
-
     );
 };
 
