@@ -1,15 +1,18 @@
 import React from 'react';
-import {Logo, Nav} from "./LandingElements";
+import {Image, Logo, Nav} from "./LandingElements";
 import {Crown} from "../Icons/Icons";
 
-const Navigation = () => {
+const Navigation = ({url}) => {
     return (
-        <Nav>
-            <Crown />
-            <Logo>
-                Redberry Knight Cup
-            </Logo>
-        </Nav>
+        <Image url={url}>
+            <Nav>
+                <Crown />
+                <Logo>
+                    Redberry Knight Cup
+                </Logo>
+            </Nav>
+        </Image>
+
     );
 };
 

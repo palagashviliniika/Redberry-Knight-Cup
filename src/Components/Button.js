@@ -1,10 +1,11 @@
 import React from 'react';
+import {Btn} from "./LandingElements";
 
-const Button = ({number, children}) => {
+const Button = ({children}) => {
     return (
-        <button>
-            {children} {number}
-        </button>
+        <Btn>
+            {children}
+        </Btn>
     );
 };
 
