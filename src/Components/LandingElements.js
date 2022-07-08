@@ -77,3 +77,21 @@ export const BtnText = styled.div`
 export const Flex = styled.div`
   display: flex;
 `
+
+export const Quote = styled.h3`
+  font-family: 'Nunito', sans-serif;
+  font-weight: 800;
+  font-style: italic;
+  font-size: 26px;
+  margin: ${(props) => props.quoteMargins};
+  color: #212529;
+`
+
+export const Author = styled.h6`
+  font-family: 'Nunito', sans-serif;
+  font-weight: 500;
+  font-style: italic;
+  font-size: 24px;
+  color: ${(props) => props.authorColor};
+  margin: ${(props) => props.authorMargins};
+`
