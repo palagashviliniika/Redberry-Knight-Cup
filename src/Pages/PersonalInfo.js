@@ -1,6 +1,7 @@
 import React from 'react';
-import {Container} from "../Components/LandingElements";
+import {Container, Main} from "../Components/LandingElements";
 import Navigation from "../Components/Navigation";
+import Header from "../Components/Header";
 
 const PersonalInfo = () => {
     return (
@@ -9,6 +10,11 @@ const PersonalInfo = () => {
                 "WHEN YOU SEE A GOOD MOVE, <br/>
                 LOOK FOR A BETTER ONE."
             </Navigation>
+            <Main color = {"#F5F5F5;"}>
+                <Header>
+                    Start Creating Your Account
+                </Header>
+            </Main>
         </Container>
     );
 };

@@ -7,7 +7,7 @@ const Landing = () => {
     return (
         <Container>
             <Navigation url={"/LandingPage.png"}/>
-            <Main>
+            <Main color = {"#FD5334"}>
                 <Article>
                     CHESS SAYS <Span>A LOT ABOUT</Span> <br/> WHO WE ARE
                 </Article>

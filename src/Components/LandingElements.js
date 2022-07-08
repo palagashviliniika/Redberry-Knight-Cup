@@ -30,7 +30,7 @@ export const Image = styled.div`
 `
 
 export const Main = styled.div`
-  background-color: #FD5334;
+  background-color: ${(props) => props.color};
   min-width: 52%;
 `
 
@@ -94,4 +94,12 @@ export const Author = styled.h6`
   font-size: 24px;
   color: ${(props) => props.authorColor};
   margin: ${(props) => props.authorMargins};
+`
+
+export const WelcomeTxt = styled.div`
+  font-weight: 600;
+  font-size: 16px;
+  color: #212529;
+  padding: 35px 0 35px 48px;
+  border-bottom: 1px solid rgba(185, 180, 196, 0.3);
 `
