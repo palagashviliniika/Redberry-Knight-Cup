@@ -3,6 +3,7 @@ import {Container, FormName, FormNameBasics, Main, MainContainer} from "../Compo
 import Navigation from "../Components/Navigation";
 import Header from "../Components/Header";
 import Wizard from "../Components/Wizard";
+import Form from "../Components/Form";
 
 const PersonalInfo = () => {
     return (
@@ -21,6 +22,7 @@ const PersonalInfo = () => {
                         Personal information
                         <FormNameBasics>This Is Basic Information Fields</FormNameBasics>
                     </FormName>
+                    <Form />
                 </MainContainer>
             </Main>
         </Container>
